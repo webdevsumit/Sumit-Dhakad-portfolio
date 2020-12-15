@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Dhakad's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <h4 class="navHeading">Portfolio</h4>
+        </div>
+        <ul>
+            <li><button onclick="showHome()" id="homeBtn">HOME</button></li>
+            <li><button onclick="showProjects()" id="projectBtn">PROJECTS</button></li>
+        </ul>
+    </nav>
+    <main id="Home">
+        <div class="myTittle" >
+            <h2><span class="myName">Sumit Dhakad</span></h2>
+            <h6><span class="myDescription">self taught web developer.</span></h6>
+        </div>
+        <div class="resumeLink">
+            <a class="links" href="https://drive.google.com/file/d/1-uVeVUyh6rqWtQrSJTt-0iH2_QbHEZVF/view?usp=drivesdk"
+             ><img class="linksImg" src="https://cdn1.iconfinder.com/data/icons/business-office-41/64/x-19-512.png"/>
+                <span> Resume</span>
+            </a></br>
+
+             <a class="links" href="https://github.com/sumitdhakad2837" 
+             ><img class="linksImg" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" />
+                <span> Github</span>
+            </a></br>
+
+             <a class="links" href="https://www.linkedin.com/in/sumit-dhakad-0152b1189" 
+             ><img class="linksImg" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png"/>
+                <span> Linkedin</span>
+            </a></br>
+
+             <a class="links" href="tel:+91 7999004229"><img class="linksImg" 
+                src="https://cdn0.iconfinder.com/data/icons/technology-business-and-industry/1000/file_light-70-512.png"/>
+                <span> Phone call</span>
+            </a></br>
+        </div>
+        <div class="showImage">
+            <img id="djangoImg"
+            src="https://cdn.pixabay.com/photo/2014/05/07/15/19/django-339744_1280.png" alt="django-image">
+            <h1 id="plus">+</h1>
+            <img id="reactImg"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" alt="react-image">
+        </div>
+        <div class="contactForm">
+            <form>
+                <input type="submit" value="MAIL TO ME" onclick="sendingMail()">
+            </form>
+        </div>
+    </main>
+    <section id="projects">
+        <div>
+            <div class="projectCover" id="projectCover1">
+                <div class="project" id="project1">
+                    <h1>01</h1>
+                    <div class="projectImage">
+                        <img src="#" alt="desktop image">
+                        <img src="#" alt="mobile image">
+                    </div>
+                    <h3>SHOPMART</h3>
+                    <a href="https://github.com/sumitdhakad2837/Shopmart"
+                    >source code</a>
+                    <p> An e-commerce website
+                        developed using Django for backend and
+                        HTML, CSS, JavaScript for frontend.</p>
+                </div>
+            </div>
+            <div class="projectCover" id="projectCover2">
+                <div class="project" id="project2">
+                    <h1>02</h1>
+                    <div class="projectImage">
+                        <img src="#" alt="desktop image">
+                        <img src="#" alt="mobile image">
+                    </div>
+                    <h3>NPR</h3>
+                    <a href="https://github.com/sumitdhakad2837/NPR">source code</a>
+                    <p>NPR(New Project Reviewer)
+                       which helps to see reviews of new item,
+                       features included login-signup, like-dislike, comments, rate,etc.
+                       Developed using django and React.js.</p>
+                </div>
+            </div>
+            <div class="projectCover" id="projectCover2">
+                <div class="project" id="project2">
+                    <h1>03</h1>
+                    <div class="projectImage">
+                        <img src="#" alt="desktop image">
+                        <img src="#" alt="mobile image">
+                    </div>
+                    <h3>WIKIPEDIA SEARCH</h3>
+                    <a href="https://github.com/sumitdhakad2837/Wikipedia-Search"
+                    >source code</a>
+                    <p> An editor with
+                        searching feature from wikipedia and with
+                        different colours, fonts and font sizes using
+                        python, tkinter, wikipedia.</p>
+                </div>
+            </div>
+            <div class="projectCover" id="projectCover2">
+                <div class="project" id="project2">
+                    <h1>04</h1>
+                    <div class="projectImage">
+                        <img src="#" alt="desktop image">
+                        <img src="#" alt="mobile image">
+                    </div>
+                    <h3>SNAKE GAME </h3>
+                    <a href="https://github.com/sumitdhakad2837/Snake-game-haooa-the-game-"
+                    >source codek</a>
+                    <p> A game with all features,
+                        sound effect and screen buttons so can be
+                        played on android using IDE(pydroid3) developed us-
+                        ing python, pygame.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        const animate =()=>{
+            gsap.from('.navHeading',{ 
+                opacity:0, 
+                duration:1, 
+                y:'-20px',
+                ease:'ease',
+                delay:0.5
+                });
+
+            gsap.from('#homeBtn',{
+                y:'-30px',
+                opacity:0,
+                duration:1,
+                delay:0.3
+            });
+
+            gsap.from('#projectBtn',{
+                y:'-30px',
+                opacity:0,
+                duration:1,
+            });
+            
+            gsap.from('.myName',{
+                y:'-30px',
+                opacity:0,
+                duration:1,
+                delay:0.6
+            });
+
+            gsap.from('.myDescription',{
+                x:'-170px',
+                opacity:0,
+                duration:1,
+                delay:0.6
+            });
+
+            gsap.from('.linksImg',{
+                scale:0,
+                opacity:0,
+                duration:1,
+                delay:0.6,
+                stagger:-0.2,
+                ease:'elastic'
+            });
+
+            gsap.from('.contactForm',{
+                opacity:0,
+                duration:1,
+                delay:1.4,
+                x:'50px',
+                ease:'elastic'
+            });
+
+            gsap.from('#djangoImg',{
+                opacity:0,
+                duration:1.1,
+                delay:1,
+                x:'80%',
+            });
+
+            gsap.from('#plus',{
+                opacity:0,
+                duration:1.6,
+                delay:1,
+                x:'90%',
+            });
+        };
+        animate();
+    </script>
+    <script>
+        var projectHome = document.querySelector('#Home');
+        var projectSection = document.querySelector('#projects');
+        
+        const showHome=()=>{
+            projectHome.style.visibility = 'visible';
+            projectHome.style.height = '100vh';
+            projectSection.style.visibility = 'hidden';
+            projectSection.style.height = '0vh';
+            animate();
+        }
+
+        const showProjects=()=>{
+            projectHome.style.visibility = 'hidden';
+            projectHome.style.height = '0vh';
+            projectSection.style.visibility = 'visible';
+            projectSection.style.height = '100vh';
+            animate();
+        }
+
+        const sendingMail=()=>{
+            var email = document.getElementById('email').value;
+            gsap.to('.contactForm',{
+                opacity:0,
+                duration:1,
+                x:'50px',
+                ease:'elastic'
+            });
+
+            window.location
+            .href="mailto:sumitdhakad2232@gmail.com?";
+        }
+
+
+
+        var projectCover1 = document.getElementsByClassName('projectCover');
+        
+        
+    </script>
+</body>
+</html>
