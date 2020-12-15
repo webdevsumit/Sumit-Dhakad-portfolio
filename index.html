@@ -122,8 +122,16 @@
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="tilt.js"></script>
+    <script type="text/javascript">
+
+        VanillaTilt.init(document.querySelectorAll(".projectCover"), {
+                max: 45,
+                speed: 400
+            });
+    </script>
     <script>
-        const animate =()=>{
+            const animate =()=>{
             gsap.from('.navHeading',{ 
                 opacity:0, 
                 duration:1, 
@@ -180,14 +188,14 @@
                 opacity:0,
                 duration:1.1,
                 delay:1,
-                x:'80%',
+                x:'70%',
             });
 
             gsap.from('#plus',{
                 opacity:0,
                 duration:1.6,
                 delay:1,
-                x:'90%',
+                x:'70%',
             });
         };
         animate();
@@ -217,7 +225,7 @@
             gsap.to('.contactForm',{
                 opacity:0,
                 duration:1,
-                x:'50px',
+                x:'40px',
                 ease:'elastic'
             });
 
