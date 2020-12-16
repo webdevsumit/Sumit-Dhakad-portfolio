@@ -25,7 +25,7 @@ body{
 nav{
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 nav div h4{
@@ -49,7 +49,7 @@ li{
     padding: 0 0 0 30px;
 }
 
-li button{
+li button,.input{
     font-family: monospace serif;
     font-weight: 500;
     background-color: var(--color1);
@@ -238,10 +238,14 @@ main{
     height: 350px;
     margin: 30px 0px;
     background-color: rgba(137, 43, 226, 0);
+    z-index: 2;
 }
 
 .project{
-    background-color: rgba(128, 128, 128, 0.575);
+    background: linear-gradient(135deg,  
+                rgba(187, 186, 186, 0.623) 35%, 
+                rgba(71, 71, 71, 0.575) 75%);
+                
     padding:0 10px 10px 20px;
     position: relative;
     width: 50px;
@@ -253,7 +257,6 @@ main{
     height: 300px;
     filter: blur(0.3px);
     border-radius: 20%;
-    transform: perspective(180px);
     border-top: 2px solid rgb(192, 192, 192);
     border-left: 2px solid rgb(192, 192, 192);
     border-right: 2px solid rgb(97, 96, 96);
@@ -291,7 +294,7 @@ main{
     filter: blur(1.5px);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     :root{
         --color1 : rgb(205, 255, 251);
         --color2 : rgb(3, 58, 1) ;
@@ -312,12 +315,86 @@ main{
         width: 100px;
     }
 
-    .contactForm input{
+    .contactForm .input{
         margin: 10px 0;
         float: right;
     }
 
     .showImage{
         flex-direction: column;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    :root{
+        --color1 : rgb(110, 236, 245);
+        --color2 : rgb(42, 1, 58) ;
+        --color3 : rgb(255, 255, 255) ;
+    }
+
+    nav{
+        font-size: 3rem;
+    }
+    .myName{
+        font-size: 7rem;
+    }
+    .myDescription{
+        font-size: 2rem;
+    }
+    .links img{
+        max-width: 75px;
+        height: 75px;
+    }
+    .links:hover>img{
+        max-width: 95px;
+        height: 95px;
+        transition: all 0.1s ease-in-out;
+    }
+    .showImage h1{
+        font-size: 3rem;
+    }
+    
+    .showImage img{
+        width: 240px;
+        margin: 30px;
+    }
+
+
+    .projectCover{
+        max-width: 400px;
+        height: 450px;
+        margin: 40px 0px;
+    }
+    
+    .project{       
+        padding:0 10px 10px 20px;
+        width: 150px;
+        max-width: 370px;
+        height: 400px;
+        
+    }
+    
+    .project h3{
+        font-size: 3rem;
+    }
+    
+    .project p{
+        font-size: 1.6rem;
+    }
+    
+    .project a{
+        font-size: 1.4rem;
+    }
+    
+    .project h1{
+        font-size: 15rem;
+    }
+
+    #projects{
+        padding-top: 100px;
+    }
+    .contactForm .input{
+        font-size: 3rem;
     }
 }
