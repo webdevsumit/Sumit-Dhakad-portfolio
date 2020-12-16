@@ -50,9 +50,8 @@
             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" alt="react-image">
         </div>
         <div class="contactForm">
-            <form>
-                <input type="submit" value="MAIL TO ME" onclick="sendingMail()">
-            </form>
+            <button class="input" onclick="sendingMail()">MAIL TO ME
+            </button>
         </div>
     </main>
     <section id="projects">
@@ -87,8 +86,8 @@
                        Developed using django and React.js.</p>
                 </div>
             </div>
-            <div class="projectCover" id="projectCover2">
-                <div class="project" id="project2">
+            <div class="projectCover" id="projectCover3">
+                <div class="project" id="project3">
                     <h1>03</h1>
                     <div class="projectImage">
                         <img src="#" alt="desktop image">
@@ -103,8 +102,8 @@
                         python, tkinter, wikipedia.</p>
                 </div>
             </div>
-            <div class="projectCover" id="projectCover2">
-                <div class="project" id="project2">
+            <div class="projectCover" id="projectCover4">
+                <div class="project" id="project4">
                     <h1>04</h1>
                     <div class="projectImage">
                         <img src="#" alt="desktop image">
@@ -216,12 +215,13 @@
             projectHome.style.visibility = 'hidden';
             projectHome.style.height = '0vh';
             projectSection.style.visibility = 'visible';
+            projectSection.style.minHeight = '100vh';
             projectSection.style.height = 'fit-content';
             animate();
+            animateProjectSection();
         }
 
         const sendingMail=()=>{
-            var email = document.getElementById('email').value;
             gsap.to('.contactForm',{
                 opacity:0,
                 duration:1,
@@ -233,10 +233,33 @@
             .href="mailto:sumitdhakad2232@gmail.com?";
         }
 
+        const animateProjectSection=()=>{
+            gsap.from('#projectCover1',{
+                opacity:0,
+                delay:0.2,
+                duration:1.5,
+                x:'-40px',
+            });
+            gsap.from('#projectCover2',{
+                opacity:0,
+                delay:0.2,
+                duration:1.5,
+                x:'40px',
+            });
+            gsap.from('#projectCover3',{
+                opacity:0,
+                delay:0.1,
+                duration:1.2,
+                x:'-40px',
+            });
+            gsap.from('#projectCover4',{
+                opacity:0,
+                delay:0.2,
+                duration:1.5,
+                x:'40px',
+            });
+        }
 
-
-        var projectCover1 = document.getElementsByClassName('projectCover');
-        
         
     </script>
 </body>
