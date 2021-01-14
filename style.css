@@ -325,7 +325,7 @@ main{
     :root{
         --color1 : rgb(205, 255, 251);
         --color2 : rgb(3, 58, 1) ;
-        --color3 : rgb(128, 126, 8) ;
+        --color3 : #de9a1b;
     }
 
     *{
@@ -336,6 +336,25 @@ main{
         height: fit-content;
         padding:20px;
     }
+
+    .project{
+        height:380px;
+    }
+
+    .project a, .project h3{
+        text-align: center;
+    }
+
+    .project p{
+        padding-left: 10px;
+    }
+
+    .project h3::after{
+        content: '\a slide left to know more';
+        white-space: pre;
+        font-size: 10px;
+    }
+
 
     .resumeLink{
         overflow: visible;
